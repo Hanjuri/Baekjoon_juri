@@ -5,6 +5,5 @@ def dp(n):
         return 2
     else:
         return dp(n-1) + dp(n-2)
-    return dp(n)
 n = int(input())
 print(dp(n))
