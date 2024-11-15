@@ -20,7 +20,7 @@ for i in range(n):
 
 for j in range(n):
     now = arr[0][j]  
-    temp_count = 0
+    temp_count = 1
     for i in range(1, n):
         if arr[i][j] != now:
             temp_count += 1
