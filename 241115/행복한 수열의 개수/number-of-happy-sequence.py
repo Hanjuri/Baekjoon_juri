@@ -8,7 +8,7 @@ total_count = 0
 
 for i in range(n):
     now = arr[i][0]  
-    temp_count = 0
+    temp_count = 1
     for j in range(1, n):
         if arr[i][j] == now: 
             temp_count += 1
