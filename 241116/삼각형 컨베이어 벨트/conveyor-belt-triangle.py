@@ -1,5 +1,5 @@
 n, t = map(int, input().split())
-arr = [list(map(int, input().split())) for _ in range(n)]
+arr = [list(map(int, input().split())) for _ in range(3)]
 arr2 = [[0]* len(arr[0]) for _ in range(len(arr))]
 
 for i in range(len(arr)):
