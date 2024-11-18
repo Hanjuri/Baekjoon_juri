@@ -1,21 +1,19 @@
 N = int(input())
 arr = [list(map(int, input().split())) for _ in range(N)]
 
-def isPossible(arr):
-    arr = sorted(arr)
+def isPossible(start, end):
     end_time = 0
-    for a, b in arr:
-        if end_time < a:
-            end_time = b
-        else:
-            return False
+    if start > end_time:
+        end_time = end
     return True
 
 maxCount = 0
 def sol(start,selected):
     global maxCount
-    if isPossible(selected):
-        maxCount = max(maxCount, len(selected))
+    if len(selected) > 0:
+        start_t, end_t= sorted(selected)[-1]
+        if isPossible(start_t, end_t):
+            maxCount = max(maxCount, len(selected))
     for i in range(start, N):
         selected.append(arr[i])
         sol(start+1, selected)
