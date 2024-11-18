@@ -12,14 +12,14 @@ def isPossible(arr):
     return True
 
 maxCount = 0
-def sol(selected):
+def sol(start,selected):
     global maxCount
     if isPossible(selected):
         maxCount = max(maxCount, len(selected))
-    for a in arr:
-        if a not in selected:
-            selected.append(a)
-            sol(selected)
-            selected.pop()
+    for i in range(start, N):
+        selected.append(arr[i])
+        sol(start+1, selected)
+        selected.pop()
     return maxCount
-print(sol([]))
+print(sol(0,[]))
+
