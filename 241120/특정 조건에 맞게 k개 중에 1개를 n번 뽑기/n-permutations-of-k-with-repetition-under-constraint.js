@@ -24,13 +24,10 @@ function allElementsTree(arr){
 
 function sol(cnt, ans){
     if(cnt === n){
-        if(n === 1){
-            printAnswer(ans);
-        }else{
-            if(!allElementsTree(ans)){
+        if(!allElementsTree(ans)){
                 printAnswer(ans);
             }
-        }
+        
         return;
     }
     for (let i = 1; i < k+1; i++) {
