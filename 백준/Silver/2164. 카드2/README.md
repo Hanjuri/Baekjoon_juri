@@ -32,11 +32,12 @@
 
  <p>첫째 줄에 남게 되는 카드의 번호를 출력한다.</p>
 
+----
 
 큐를 구현하는 방식에 따라 **popleft()**의 시간 복잡도가 달라질 수 있습니다.
 
 1. collections.deque의 popleft()
-	•	collections.deque는 **이중 연결 리스트(double-ended queue)**를 기반으로 구현되어 있습니다.
+	•	collections.deque는 ** 이중 연결 리스트(double-ended queue) **를 기반으로 구현되어 있습니다.
 	•	따라서, popleft()는 **O(1)**의 시간 복잡도를 가집니다.
 이는 요소를 제거하는 데 연결 리스트의 포인터만 업데이트하면 되기 때문입니다.
 
