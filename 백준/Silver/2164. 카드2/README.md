@@ -1,4 +1,5 @@
 # [Silver IV] 카드2 - 2164 
+## ☑️한번 더 체크☑️ 🥈
 
 [문제 링크](https://www.acmicpc.net/problem/2164) 
 
